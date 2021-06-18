@@ -41,6 +41,10 @@ public class SortingAlgorithms {
         return array;
     }
     
+    public static int[] selectionSort(int[] array) {
+        return array;
+    }
+    
     /**
      * @param args the command line arguments
      */
