@@ -48,6 +48,11 @@ public class SortingAlgorithms {
         return array;
     }
     
+    /**
+     * Loops through an unsorted array and sorts elements from smallest to largest.
+     * @param array - Takes an array of integers.
+     * @return - Returns a sorted array from smallest to largest.
+     */
     public static int[] selectionSort(int[] array) {
         
         int i, j, temp =0;
