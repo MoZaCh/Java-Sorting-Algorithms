@@ -12,6 +12,19 @@ package sorting.algorithms;
 public class SortingAlgorithms {
 
     /**
+     * 
+     * @param array
+     * @return 
+     */
+    public static int[] bubbleSort(int[] array) {
+        
+        
+        
+        return array;
+    }
+    
+    
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
