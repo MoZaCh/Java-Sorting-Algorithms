@@ -42,7 +42,6 @@ public class SortingAlgorithms {
         return array;
     }
     
-    
     /**
      * @param args the command line arguments
      */
@@ -50,11 +49,13 @@ public class SortingAlgorithms {
         
         int[] array = {5, 8, 1, 6, 9, 2};
         int[] result = bubbleSort(array);
-        
+        String sortedList = "";
         System.out.println("Result:");
         for(int i=0; i < result.length; i++) {
-            System.out.println(result[i]);
+            sortedList += result[i] + " ";
         }
+        
+        System.out.println(sortedList);
     }
     
 }
