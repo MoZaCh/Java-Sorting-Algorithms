@@ -7,8 +7,8 @@ package sorting.algorithms;
 public class SortingAlgorithms {
 
     /**
-     * 
-     * @param array 
+     * Loops through the array and prints each element out.
+     * @param array - Takes an array of integers as input.
      */
     public static void printArray(int[] array) {
         for(int i=0; i < array.length; i++) {
