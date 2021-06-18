@@ -17,9 +17,9 @@ public class SortingAlgorithms {
     }
     
     /**
-     * 
-     * @param array
-     * @return 
+     * Loops through unsorted array and sorts elements out from smallest to largest.
+     * @param array - Takes an array of integers as input.
+     * @return - Returns a sorted array from smallest to largest.
      */
     public static int[] bubbleSort(int[] array) {
         
