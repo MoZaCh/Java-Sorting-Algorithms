@@ -11,9 +11,16 @@ public class SortingAlgorithms {
      * @param array - Takes an array of integers as input.
      */
     public static void printArray(int[] array) {
+        
+        String sortedList = "";
         for(int i=0; i < array.length; i++) {
-            System.out.println(array[i]);
+            sortedList += array[i] + " ";
         }
+        System.out.println(sortedList);
+//        }
+//        for(int i=0; i < array.length; i++) {
+//            System.out.println(array[i]);
+//        }
     }
     
     /**
@@ -42,6 +49,23 @@ public class SortingAlgorithms {
     }
     
     public static int[] selectionSort(int[] array) {
+        
+        int i, j, temp =0;
+        
+        for(i=0; i < array.length -1; i++) {
+            int minIndx = i;
+            for (j=i+1; j < array.length; j++) {
+                if(array[j] < array[minIndx]) {
+                    minIndx = j;
+                }
+            }
+            temp = array[minIndx];
+            array[minIndx] = array[i];
+            array[i] = temp;
+            System.out.println("Iteration: " + i);
+            printArray(array);
+            
+        }
         return array;
     }
     
@@ -51,14 +75,12 @@ public class SortingAlgorithms {
     public static void main(String[] args) {
         
         int[] array = {5, 8, 1, 6, 9, 2};
-        int[] result = bubbleSort(array);
-        String sortedList = "";
-        System.out.println("Result:");
-        for(int i=0; i < result.length; i++) {
-            sortedList += result[i] + " ";
-        }
-        
-        System.out.println(sortedList);
+
+        System.out.println("Bubble Sort: ");
+        bubbleSort(array);
+
+        System.out.println("\nSelection Sort: ");
+        selectionSort(array);
     }
     
 }
