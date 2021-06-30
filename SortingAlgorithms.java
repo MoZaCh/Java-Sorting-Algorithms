@@ -69,7 +69,6 @@ public class SortingAlgorithms {
             array[i] = temp;
             System.out.println("Iteration: " + i);
             printArray(array);
-            
         }
         return array;
     }
